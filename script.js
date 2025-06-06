@@ -88,8 +88,4 @@ fetch(apiURL2, options)
     }
   
     
- 
-  
-
-    console.log(data);
   });
