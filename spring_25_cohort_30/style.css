@@ -1,0 +1,374 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f7fa;
+  font-family: "Lekton", monospace;
+  line-height: 1.6;
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+ 
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #4db6ac;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1rem 2rem;
+  height: 150px;
+  background-color: #cfe8ff ;
+}
+
+/* Center the brand visually in the navbar */
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-brand img {
+  max-height: 100px;
+  margin-bottom: 0.25rem;
+}
+
+.brand-title {
+  font-family: 'Courier New', monospace;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .flip-card-front img {
+      width: 50%;
+  }
+}
+
+/* Card Container (Flip Cards) */
+
+.card-container {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  perspective: 1000px;
+  flex-grow: 1;
+/*   border: 1px solid #dbeafe; */
+  padding:30px;
+  
+  
+
+  
+}
+
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+
+
+/* Flip Card Inner */
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column; /* Ensures content inside the card stacks vertically */
+}
+
+/* Front of the card */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Front Card Styling */
+.flip-card-front {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+}
+
+/* Card Body Styling */
+.card-body {
+  padding: 20px;
+  margin-top: 20px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* Flip Card Back (on 180deg flip) */
+.flip-card-back {
+  transform: rotateY(180deg); 
+  padding:1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#ffffff; /* Slightly different background to distinguish back */
+}
+.flip-card-back-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.flip-card-back .card-info {
+  flex-grow: 1;
+  padding-bottom: 1rem; /* space above the name */
+}
+
+/* Card Title, Text, Career, and Links */
+.card-title,
+.card-text,
+.card-body .career {
+  margin-bottom: 10px;
+}
+
+.card-body .career {
+  font-style: italic;
+}
+
+.flip-card-back .card-name {
+  font-weight: bold;
+}
+
+.flip-card-back a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.flip-card-back a:hover {
+  text-decoration: underline;
+}
+.card-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-links a {
+  display: flex;
+  justify-content: center;
+}
+
+/* Flip Effect on Hover */
+.card-container:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.dark-mode .flip-card-back p,
+.dark-mode .flip-card-back h6 {
+  color: white;
+}
+.dark-mode .navbar-brand:hover {
+  color: white !important;
+}
+
+
+
+/* Buttons */
+
+.btn-linkedin {
+  color: white !important;
+  background-color: #0077b5 !important;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.btn-linkedin i {
+  margin-left: 8px;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white !important;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  color: white !important;
+}
+
+button {
+  background-color: #263238;
+  color: #e0f7fa;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #37474f;
+}
+/* Default (Light Mode) */
+.linkedin-btn {
+  color: black;
+  border: 1px solid black;
+  background-color: transparent;
+}
+
+/* On hover (optional) */
+.linkedin-btn:hover {
+  background-color: #0077b5; /* LinkedIn blue */
+  color: white;
+  border-color: #0077b5;
+}
+
+/* Dark Mode */
+body.dark-mode .linkedin-btn {
+  color: white;
+  border: 1px solid white;
+}
+
+body.dark-mode .linkedin-btn:hover {
+  background-color: #0077b5; /* LinkedIn blue */
+  color: white;
+  border-color: #0077b5;
+}
+
+
+/* Dark Mode Styles */
+.dark-mode .flip-card-front {
+  background-color: #000;
+  color: #fff;
+}
+.dark-mode .flip-card-front .card-body,
+.dark-mode .flip-card-front .card-title {
+  color: #fff;
+}
+
+
+.dark-mode {
+  background-color: #222222; /* Dark background */
+  color: #f0f0f0; /* Light text */
+}
+
+.dark-mode .card {
+  background-color: #141414;
+  color: #f0f0f0;
+  border: 1px solid #333;
+}
+
+.dark-mode .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #808080; 
+  padding: 30px;
+  align-items: center;
+  position: relative;
+  border-bottom: 2px solid #ccc;  
+} 
+
+
+.dark-mode .flip-card-back {
+  background-color: #141414;
+}
+
+.dark-mode .btn-primary,
+.dark-mode .btn-secondary,
+.dark-mode .btn-linkedin {
+  background-color: #333;
+  border-color: #333;
+  color: white;
+}
+
+.dark-mode a {
+  color: #90caf9; /* lighter blue links */
+}
+body.dark-mode .card-body {
+  color: black;
+}
+
+
+
+
+
+/* Footer */
+#main-footer {
+  background-color: #cfe8ff ; 
+  color: #333333;
+  font-family: "Kode Mono", monospace;
+}
+.dark-mode #main-footer {
+  background-color: #808080;
+  color: #f8f9fa;
+  font-family: "Kode Mono", monospace;
+  border-top: 2px solid #ccc;
+}
+.footer-img{
+  max-width: 300px;
+  
+}
+
+/* Thank You Section */
+.thank-you {
+  color: #1377ff;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .card-container {
+    max-width: 400px;
+    height: 400px;
+  }
+}
+
+.thank-you {
+  color: #1377ff;
+}
+
