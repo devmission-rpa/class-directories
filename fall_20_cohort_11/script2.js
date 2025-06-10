@@ -10,77 +10,77 @@ async function getDirectory() {
     }
   };
   
-//   await fetch(`https://api.airtable.com/v0/appOV9Fu3N4LNDlPM/Directory?&view=order`, options)
-//     .then((response) => response.json())
-//     .then((data) => {
-//       console.log(data); // response is an object w/ .records array
+  await fetch(`https://api.airtable.com/v0/appOV9Fu3N4LNDlPM/Directory?&view=order`, options)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data); // response is an object w/ .records array
 
-//       studentResultElement.innerHTML = ""; // clear student
+      studentResultElement.innerHTML = ""; // clear student
 
-//       let newHtml = "";
+      let newHtml = "";
 
-//       for (let i = 0; i < data.records.length; i++) {
-//         let name = data.records[i].fields["Name"];
-//         let link = data.records[i].fields["Link"];
-//         let picture = data.records[i].fields["Pictures"];
+      for (let i = 0; i < data.records.length; i++) {
+        let name = data.records[i].fields["Name"];
+        let link = data.records[i].fields["Link"];
+        let picture = data.records[i].fields["Pictures"];
 
-//         newHtml += `
+        newHtml += `
         
-//           <div class="col-md-4 cardImageText">
-//           <div class="card">
-//             <a target="_blank"
-//               >${picture ? `<img class="head" src="${picture[0].url}">` : ``}
-//             </a>
+          <div class="col-md-4 cardImageText">
+          <div class="card">
+            <a target="_blank"
+              >${picture ? `<img class="head" src="${picture[0].url}">` : ``}
+            </a>
 
-//             <div class="card-body">
-//               <p class="card-text card-key">${name}</p>
-//             </div>
-//           </div>
-//         </div>
+            <div class="card-body">
+              <p class="card-text card-key">${name}</p>
+            </div>
+          </div>
+        </div>
         
-//         `;
-//       }
+        `;
+      }
 
-//       studentResultElement.innerHTML = newHtml;
-//     });
-// }
+      studentResultElement.innerHTML = newHtml;
+    });
+}
 
-// async function getSingleDirectory(programsId) {
-//   let studentResultElement = document.getElementById("student");
+async function getSingleDirectory(programsId) {
+  let studentResultElement = document.getElementById("student");
   
-//   const options = {
-//     method: 'GET',
-//     headers: {
-//       Authorization: `Bearer patyxFwydN1umVWRB.a71c65f85b76352ea9b881aa685c0808e1014dffe74412f83dd6d5c9abfd3ca6`
-//     }
-//   };
+  const options = {
+    method: 'GET',
+    headers: {
+      Authorization: `Bearer patyxFwydN1umVWRB.a71c65f85b76352ea9b881aa685c0808e1014dffe74412f83dd6d5c9abfd3ca6`
+    }
+  };
 
-//   await fetch(`https://api.airtable.com/v0/appOV9Fu3N4LNDlPM/Directory/${programsId}`, options)
-//     .then((response) => response.json())
-//     .then((data) => {
-//       console.log(data); // response is a single object
+  await fetch(`https://api.airtable.com/v0/appOV9Fu3N4LNDlPM/Directory/${programsId}`, options)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data); // response is a single object
 
-//       let progName = data.fields["Name"];
-//       let progDescription = data.fields["Description"];
-//       let progGrade = data.fields["Grade"];
-//       let progTime = data.fields["Time Duration"];
-//       let progLink = data.fields["Program URL"];
+      let progName = data.fields["Name"];
+      let progDescription = data.fields["Description"];
+      let progGrade = data.fields["Grade"];
+      let progTime = data.fields["Time Duration"];
+      let progLink = data.fields["Program URL"];
 
-//       let newHtml = `
+      let newHtml = `
         
-//         <div class="col-12">
-//           <div class="card">
+        <div class="col-12">
+          <div class="card">
     
-//             <h4 class="card-title">${progName}</h4>
+            <h4 class="card-title">${progName}</h4>
            
-//             <p class="progDescription">${progDescription}</p>
-//             <h5 class="descriptionTitle">Description:</h5>
+            <p class="progDescription">${progDescription}</p>
+            <h5 class="descriptionTitle">Description:</h5>
             
-//         </div>
-//       `;
+        </div>
+      `;
 
-//       studentResultElement.innerHTML = newHtml;
-//     });
+      studentResultElement.innerHTML = newHtml;
+    });
 }
 
 //function used to search through the cards by name
