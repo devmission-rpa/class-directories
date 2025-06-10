@@ -28,7 +28,7 @@ async function getDirectory() {
         
           <div class="col-md-4 cardImageText">
           <div class="card">
-            <a target="_blank"
+            <a href='./student/${name}/index.html'target="_blank"
               >${picture ? `<img class="head" src="${picture[0].url}">` : ``}
             </a>
 
