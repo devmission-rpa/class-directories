@@ -17,7 +17,7 @@ fetch("https://api.airtable.com/v0/appYBYqd9KS9OqEE5/Directory", options)
       const name = record.fields["Name"];
       const linkedin = record.fields["Linkedin"];
       const description = record.fields["Description"];
-      const aboutMePage = record.fields["About Me Page"];
+      const aboutMePage = name.toLowerCase().split(" ").join("_")
       const thumbnail = record.fields["Picture"] ? record.fields["Picture"][0].url : "";
       
 
@@ -30,7 +30,7 @@ fetch("https://api.airtable.com/v0/appYBYqd9KS9OqEE5/Directory", options)
       
       const back = document.createElement('div');
       back.classList.add('back');
-      back.innerHTML = `<p>${description}</p><a href="${linkedin}" target="_blank" class="btn btn-primary"><i class="fab fa-linkedin"></i> LinkedIn</a> <a href="${aboutMePage}" target="_blank" class="btn btn-secondary"><i class="fas fa-info-circle"></i> About Me</a>`;
+      back.innerHTML = `<p>${description}</p><a href="${linkedin}" target="_blank" class="btn btn-primary"><i class="fab fa-linkedin"></i> LinkedIn</a> <a href="./students/${aboutMePage}/index.html" target="_blank" class="btn btn-secondary"><i class="fas fa-info-circle"></i> About Me</a>`;
       
       card.appendChild(front);
       card.appendChild(back);

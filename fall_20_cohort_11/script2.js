@@ -23,12 +23,11 @@ async function getDirectory() {
         let name = data.records[i].fields["Name"];
         let link = data.records[i].fields["Link"];
         let picture = data.records[i].fields["Pictures"];
-
         newHtml += `
         
           <div class="col-md-4 cardImageText">
           <div class="card">
-            <a href='./student/${name}/index.html'target="_blank"
+            <a href='./student/${name}/index.html' target="_blank"
               >${picture ? `<img class="head" src="${picture[0].url}">` : ``}
             </a>
 
