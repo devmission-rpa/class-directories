@@ -19,8 +19,7 @@ fetch("https://api.airtable.com/v0/appYBYqd9KS9OqEE5/Directory", options)
       const description = record.fields["Description"];
       const aboutMePage = record.fields["About Me Page"];
       const thumbnail = record.fields["Picture"] ? record.fields["Picture"][0].url : "";
-        // const aboutMePage = name.toLowerCase().split(" ").join("_");
-
+      
 
       const card = document.createElement('div');
       card.classList.add('card', 'col-md-4');
