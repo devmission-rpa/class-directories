@@ -25,12 +25,11 @@ fetch(apiURL, options)
         <div class="thumbnail"> 
           
           <div class="imageContainer">
-            <img class="thumbnail_img" src="${data.records[i].fields.CohortImage[0].url}" alt="${data.records[0].fields.Name}">
+            <a href="./${data.records[i].fields.CohortName}/index.html" target="_"><img class="thumbnail_img" src="${data.records[i].fields.CohortImage[0].url}" alt="${data.records[0].fields.Name}"></a>
           </div>
           <div class="name">
             <h5 style="color:black; font-family: 'Poppins', sans-serif;">${data.records[i].fields.CohortName}</h5>
             <p style="color:gray; ">${data.records[i].fields.CohortDate}</p>
-          </a>
           </div>
         </div>`;
     }
