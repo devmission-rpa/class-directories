@@ -1,0 +1,155 @@
+
+
+.card-container {
+  display: flex; 
+  grid-template-columns: repeat(2, 1fr); 
+  justify-content: center; 
+  max-width: 100%;
+  margin: 20px;
+  margin-top: 25px;
+  gap: 3.85vh 1vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 15vw;
+  height: 35vh;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  object-position: 50% 25%;
+}
+
+.flip-card-front footer {
+  height: 15%;
+  background: #333333;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+.career{
+    font-size:1.1em;
+  text-decoration: underline;
+  }
+
+.career p {
+  margin-bottom:0 !important;
+}
+
+.flip-card-back {
+  background: #ffffff;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: space-between; /* Ensure space distribution */
+  height: 100%; /* Full height of the card */
+  padding: 10px;
+  
+}
+.bio, .quote{
+  font-size: 0.8em;
+  flex-grow: 1; /* Let content grow and take available space */
+  }
+.flip-card-back footer {
+  height: 15%; /* Set a fixed height for the footer */
+  background: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto; /* Push footer to the bottom */
+
+}
+
+.flip-card-back .social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.flip-card-back .social-icon img {
+  width: 100%;
+  height: 100%;
+  border-radius:15%;
+  object-fit: contain;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.flip-card-back .social-icon:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.flip-card-back .quote {
+  font-style: italic; 
+}
+
+
+
+@media screen and (max-width: 960px) {
+  .flip-card {
+    width: 200px;
+    height: 350px;
+  }
+  
+  .flip-card-front img {
+    height: 85%;
+  }
+  
+  .flip-card-front footer {
+    font-size: 0.9rem;
+  }
+  
+  .flip-card-back {
+    .career{
+      font-size: 1em;
+    }
+    .bio
+    {
+      font-size: 0.7em;
+    }
+    .quote{
+      font-size: 0.7em;
+    }
+  }
+  
+  .flip-card-back .social-icon {
+    height: 30px; /* Adjust as needed */
+  }
+}
