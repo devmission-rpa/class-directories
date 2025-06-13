@@ -19,13 +19,16 @@ async function getAllRecords() {
       for (let eachPerson = 0; eachPerson < numberOfPeople; eachPerson++) {
         let currentPersonRecord = data.records[eachPerson];
 
+        let name = currentPersonRecord.fields["Full Name"];
+        let string_name = name.replace(" ", "_").toLowerCase();
+
         //Current Member Object
         let currentMember = {
           fullName: currentPersonRecord.fields["Full Name"],
           teamMateImage: currentPersonRecord.fields["Teammate Picture"][0].url,
           devMissionQuote: currentPersonRecord.fields["Dev/Mission Quote"],
           linkToLinkedIn: currentPersonRecord.fields["LinkedIn Link"],
-          portfolioLink: currentPersonRecord.fields["Portfolio Link"],
+          portfolioLink: `./students/${string_name}/index.html`,
           projectTitle: currentPersonRecord.fields["Project Title"],
           projectImage: currentPersonRecord.fields["Project Image"],
           projectSourceLink: currentPersonRecord.fields["Project Source Link"],
@@ -40,7 +43,7 @@ async function getAllRecords() {
       <div class="card card-body p-0 col-lg-2 col-md-4 col-sm-4">
       
     
-      <a href="${currentMember.portfolioLink}">
+      <a href="${currentMember.portfolioLink}" target="_blank">
            <img
               src="${currentMember.teamMateImage}"
               class="member-image img-fluid rounded-4 shadow-2-strong"
