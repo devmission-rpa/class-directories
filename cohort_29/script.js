@@ -1,6 +1,6 @@
 "use strict";
 // read token for airtable directory
-const very_secret_token = 'patCd9XaHXn1QiqKV.5d4572f549c38c9e562d06e08091a6f252a51e17f4ab486aacbec2dbb083be7c';
+const very_secret_token = 'patuuqqBsHRftlB7J.a800c4683b3330ee455b92afc3cd32dac511f63b39f2e31c3db06412dac93804';
 
 // function for our list view
 async function getAllRecords() {
