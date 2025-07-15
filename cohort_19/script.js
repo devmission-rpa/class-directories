@@ -11,7 +11,7 @@ async function fetchTrainees() {
     }
   };
   
-  const SUMMARY_QUERY = "fields%5B%5D=name&fields%5B%5D=linkedIn&fields%5B%5D=bio&fields%5B%5D=link&fields%5B%5D=email&fields%5B%5D=headshot&fields%5B%5D=title&fields%5B%5D=thumbnail";
+  const SUMMARY_QUERY = "fields%5B%5D=name&fields%5B%5D=linkedIn&fields%5B%5D=bio&fields%5B%5D=profileName&fields%5B%5D=email&fields%5B%5D=headshot&fields%5B%5D=title&fields%5B%5D=thumbnail";
 
   await fetch(`https://api.airtable.com/v0/appVopZTmpCPJVkDz/Trainees?&view=order&${SUMMARY_QUERY}`, options)
     .then(response => response.json())
@@ -27,7 +27,7 @@ async function fetchTrainees() {
         let email = data.records[i].fields["email"];
         let linkedIn = data.records[i].fields["linkedIn"];
         let bio = data.records[i].fields["bio"];
-        let link = data.records[i].fields["link"];
+        let link = data.records[i].fields["profileName"];
         let pic = data.records[i].fields["headshot"];
         let title = data.records[i].fields["title"];
         let thumbnail = data.records[i].fields["thumbnail"];
@@ -46,7 +46,7 @@ async function fetchTrainees() {
                   <div class="flip-card-back shadow rounded-5">
                   <h3 class="p1">About Me</h3>
                     <a
-                      href="${link}"
+                      href="./students/${link}/index.html"
                       target="_blank"
                       style="text-decoration: none"
                     >

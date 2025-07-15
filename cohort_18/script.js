@@ -25,7 +25,7 @@ async function getAllRecords() {
           teamMateImage: currentPersonRecord.fields["Teammate Picture"][0].url,
           devMissionQuote: currentPersonRecord.fields["Dev/Mission Quote"],
           linkToLinkedIn: currentPersonRecord.fields["LinkedIn Link"],
-          portfolioLink: currentPersonRecord.fields["Portfolio Link"],
+          profileName: currentPersonRecord.fields["profileName"],
           projectTitle: currentPersonRecord.fields["Project Title"],
           projectImage: currentPersonRecord.fields["Project Image"],
           projectSourceLink: currentPersonRecord.fields["Project Source Link"],
@@ -40,7 +40,7 @@ async function getAllRecords() {
       <div class="card card-body p-0 col-lg-2 col-md-4 col-sm-4">
       
     
-      <a href="${currentMember.portfolioLink}">
+      <a href="./students/${currentMember.profileName}/index.html">
            <img
               src="${currentMember.teamMateImage}"
               class="member-image img-fluid rounded-4 shadow-2-strong"
@@ -55,13 +55,12 @@ async function getAllRecords() {
            " alt="linkedin"/"></a>
            </div>
            <div class="text-center">
-             <a href="${currentMember.portfolioLink}" class="text-center card-title portfolio" target="_blank">View Portfolio</a>
+             <a href="./students/${currentMember.profileName}/index.html" class="text-center card-title portfolio" target="_blank">View Portfolio</a>
              <img class="linkedin-logo" src="https://static.vecteezy.com/system/resources/previews/003/355/184/original/autumn-falling-leaves-icon-free-vector.jpg" alt="icon of leave"/>
             </div>
           <div class="d-flex flex-column justify-content-center card-text quote">"${currentMember.devMissionQuote}"
             
-            <h5 class="row justify-content-center project-title">Project Showcase - ${currentMember.projectTitle}</h5>
-                <a href="${currentMember.projectSourceLink}" target="_blank"class="row view-project justify-content-center">View Project</a>
+            
           </div>
           </a>
          

@@ -52,7 +52,7 @@ async function getAllRecords() {
               <div class="col-md-8">
                 <div class="card-body">
                 
-                  <h1 class="card-title card-key"><p href="index.html?id=${data.records[i].id}">${name}</p></h1>
+                  <h1 class="card-title card-key"><p href="./students/${name}/index.html">${name}</p></h1>
                   <p class="card-text careerText">${career}</p>
                   <p class="card-text" >${description}</p>
                   <a href="${aboutme}" target="_blank" class="card-text link" style="color: blue"><small  class="text-body-secondary" >About Me  |  </small></a>

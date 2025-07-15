@@ -6,7 +6,7 @@
 //       Then add API Key
 
 // const apiToken = "patikw4Ya3HUxJqmA.2b955ab47ba7fc08254ca781b778ccab4f611544e887ed362de24c6e397d8a35";
-const summary = "fields%5B%5D=studentName&fields%5B%5D=imageURL&fields%5B%5D=website";
+const summary = "fields%5B%5D=studentName&fields%5B%5D=image&fields%5B%5D=website&fields%5B%5D=websites";
 const api_url_NEW = `https://api.airtable.com/v0/appocFsfVnwXhJuMW/Description?&${summary}` ;
 
 
@@ -26,12 +26,13 @@ fetch(api_url_NEW, options)
   .then(data => {
     for (let i = 0; i < data.records.length; i++) {
       let student = document.getElementById("student");
-      
+      let websites = data.records[i].fields["websites"];
+      let image = data.records[i].fields["image"];
       student.innerHTML += `
       <div class="headshot">
-        <a href="${data.records[i].fields.website}" target="_blank">
+        <a href="./students/${websites}/index.html" target="_blank">
           <div class="cropped">
-            <img  src="${data.records[i].fields.imageURL}" ${data.records[i].fields.missing} class="headshot" placeholder="image of ${data.records[i].fields.studentName}">
+            <img  ${image ? `<img class="headshot" src="${image[0].url}"` : ``} ${data.records[i].fields.missing} class="headshot" placeholder="image of ${data.records[i].fields.studentName}">
           </div>
         </a>
           <p class="name">${data.records[i].fields.studentName}</p>
