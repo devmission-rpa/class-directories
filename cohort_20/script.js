@@ -44,7 +44,7 @@ const fetchPeople = async () => {
     name = record.fields.Name;
     title = record.fields.Title;
     description = record.fields.Description;
-    url = record.fields.Url;
+    url = record.fields.firstName;
     
     // TODO: FRONTEND Add styling, use template literals to use image, name, title, and description variables. Eg. `My name is ${name}`.
     //Card is currently a placeholder, have front end make sure it's to their liking.
@@ -60,7 +60,7 @@ const fetchPeople = async () => {
               <p id="description" class="card-text">${description}</p>
             </div>
             <div class="button-center">
-            <a class="btn btn-secondary" target="_blank" href="${url}">About Me</a>
+            <a class="btn btn-secondary" target="_blank" href="./students/${url}/index.html">About Me</a>
             </div>
           </div>
       </div>
