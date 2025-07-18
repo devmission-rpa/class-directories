@@ -12,11 +12,11 @@ nav {
   flex-direction: row !important;
   flex-wrap: nowrap !important;
 }
-.container {
-/*   display: flex;
+/* .container {
+  display: flex;
   justify-content: center;
-  height: 100vh; */
-}
+  height: 100vh;
+} */
 
 /* used to space empty abolute elements */
 .scroll-container {
