@@ -31,7 +31,7 @@ async function getAllRecords() {
         let name = data.records[i].fields["Name"];
         let email = data.records[i].fields["Email"];
         let headshot = data.records[i].fields["Headshot"];
-        let aboutMe = data.records[i].fields["About Me"];
+        let aboutMe = data.records[i].fields["about_me"];
         let linkedIn = data.records[i].fields["Linked-in"];
         let project = data.records[i].fields["Project"];
         let groupPhotos = data.records[i].fields["Group Photos"]
@@ -67,7 +67,7 @@ async function getAllRecords() {
                   "https://devmission.org/wp-content/uploads/2022/11/cropped-DM-Full-Logo-01.png"
 									class="card-img-top pt-2" alt="Back Image">
 								<div class="card-body d-flex flex-column">
-									<a class="card-text btn btn-primary mt-1 mx-auto fw-bold" href="${aboutMe}" target="_blank">About Me</a>
+									<a class="card-text btn btn-primary mt-1 mx-auto fw-bold" href="./students/${aboutMe}/index.html" target="_blank">About Me</a>
 									<a class="card-text btn btn-primary mt-1 mx-auto" href="${project}" target="_blank">Favorite Project</a>
                   <a class="link-dark fs-1" target="_blank" href="${linkedIn}"><i class="fa-brands fa-linkedin"></i></a>
 								</div>

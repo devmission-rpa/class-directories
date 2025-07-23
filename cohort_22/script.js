@@ -1,6 +1,6 @@
 "use strict";
 
-
+/*
 async function getAllRecords() {
   
   let getResultElement = document.getElementById("insertHTML");
@@ -72,8 +72,8 @@ async function getAllRecords() {
 
       });
   }
-
-
+*/
+/*
   //adds a comma after the 3rd digit from the left
   function toCommas(value) {
     return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -152,7 +152,7 @@ async function getAllRecords() {
         jobsResultElement.innerHTML = newHtml;
       });
   }
-
+*/
   function searchFunction() {
     let input, filter, cardimagetext, i, x; // declare all four at once
 

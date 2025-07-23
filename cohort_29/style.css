@@ -92,7 +92,7 @@ img {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbbbb;
+  background-color: #bbb;
   color: black;
 }
 
