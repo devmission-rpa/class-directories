@@ -11,7 +11,7 @@ h3{
 
 .textbox{
     background-size: cover;
-    background-color: #8B9D000;
+    background-color: #fefefe;
     width: 450px;
     height: 400px;
     padding-bottom: 2%;
@@ -20,7 +20,7 @@ h3{
 
 .lefttextbox{
     background-size: cover;
-    background-color: #8B9D000;
+    background-color: #fefefe;
     width: 450px;
     height: 400px;
     padding-bottom: 2%;
@@ -29,14 +29,14 @@ h3{
 
 .box{
     background-size: cover;
-    background-color: #8B9D000;
+    background-color: #fefefe;
     width: 500px;
     height: 360px;
     margin: 15px 1px 10px 30px;
 }
 
 .footer{
-    background-color: #8B9D000;
+    background-color: #fefefe;
     width: 400px;
     height: 200px;
     margin: 50px 0px 0px 370px;
@@ -91,27 +91,27 @@ p.bottom{
 /* box background pics */
 
 .one{
-    background-image: url(https://cdn.glitch.com/3a9ed896-ed4b-410e-bae4-7a92b5c3f57f%2F121133938_2732103960334474_7084673281861549697_n.jpg?v=1602143118585);
+    background-image: url(./images/doggy.jpg);
 }
 
 .two{
-    background-image: url(https://cdn.glitch.com/3a9ed896-ed4b-410e-bae4-7a92b5c3f57f%2Fcoding.jpg?v=1602717952614)
+    background-image: url(./images/coding.jpg)
 }
 
 .three{
-    background-image: url(https://cdn.glitch.com/3a9ed896-ed4b-410e-bae4-7a92b5c3f57f%2Fpancake.jpg?v=1602131136793);
+    background-image: url(./images/pancake.jpg);
 }
 
 /* hover box background gifs */
 
 .three:hover{
-    background-image: url(https://cdn.glitch.com/3a9ed896-ed4b-410e-bae4-7a92b5c3f57f%2Fcake.gif?v=1602131232449);
+    background-image: url(./images/cake.gif);
     background-position: center;
 }
 
 body {
     background-size: cover;
-    background-image: url(https://cdn.glitch.com/3a9ed896-ed4b-410e-bae4-7a92b5c3f57f%2Fbg.png?v=1602719360993);
+    background-image: url(./images/bg.png);
 }
 
 .navbar{
