@@ -1,0 +1,85 @@
+img {
+  max-width:100%; 
+  max-height:100%;
+}
+footer {
+  padding: 20px;
+  background: gray;
+  color: white;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: 1fr;
+  background-image: url(https://cdn.glitch.global/47f9a9a5-1e92-4c6e-a0b2-15c340646b11/arrow?v=1713916447027);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: auto;
+} 
+
+.grid .img_bottom {
+  position: absolute;
+  width: 20vw;
+  right: 50vw;
+  top: 110px;
+  animation: swing-bottom 10s ease-in-out infinite;
+}
+
+.grid .img_top {
+  position: absolute;
+  width: 30vw;
+  right: 35vw;
+  top: 490px;
+  animation: swing-top 10s ease-in-out infinite;
+}
+
+.grid .img_home{
+  position: absolute;
+  width: 10vw;
+  right: 35vw;
+  top: 320px;
+  animation: swing-top 10s ease-in-out infinite;
+}
+@keyframes swing-bottom {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+@keyframes swing-top {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(10px) rotate(5deg);
+  }
+  75% {
+    transform: translateX(10px) rotate(-5deg); 
+  }
+}
+
+/* Hover styles */ 
+.grid .img_bottom:hover {
+  filter: brightness(1.2); 
+  filter: grayscale(30%) hue-rotate(280deg);
+}
+
+.grid .img_top:hover {
+  filter: brightness(1.2); 
+  filter: grayscale(30%) hue-rotate(280deg);
+}
+
+.grid .img_home:hover {
+  filter: brightness(1.2); 
+  filter: grayscale(30%) hue-rotate(280deg);
+}
+

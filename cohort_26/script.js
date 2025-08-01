@@ -58,7 +58,7 @@ async function getStudentRecords() {
 
       for (let i = 0; i < data.records.length; i++) {
         let name = data.records[i].fields["Name"]; // here we are getting column values
-        let project = data.records[i].fields["Project"];
+        let project = data.records[i].fields["firstName"];
         let text = data.records[i].fields["Text"];
         let picture = data.records[i].fields["Picture"];
         
@@ -74,7 +74,7 @@ async function getStudentRecords() {
             <div class="flip-card-back desc">
               <h1 class="bio">${name}</h1>
               <p class="bio">${text}</p>
-              <a href="${project}" target="_blank"><button type="button" class="btn btn-light">Project</button></a>
+              <a href="./students/${project}/index.html" target="_blank"><button type="button" class="btn btn-light">Project</button></a>
             </div>
           </div>
         </div>

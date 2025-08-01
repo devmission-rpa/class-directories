@@ -34,7 +34,7 @@ html {
   border-radius: 50%; /* turn square into disc */
   box-shadow: 2px 2px 17px #000000;
   background: 
-		/* top layer, restricted to the content-box */ url(https://cdn.glitch.global/6a512068-595f-429f-bf6c-4d3d774147e6/IMG_20231031_200636.jpg?v=1709770241628)
+		/* top layer, restricted to the content-box */ url(./diananprofile.jpg)
       50% / cover content-box,
     /* bottom layer, a conic-gradient() covering the entire padding-box. 
 		 * using longer hue interpolation method to generate 🌈 out of 1 hsl() value,

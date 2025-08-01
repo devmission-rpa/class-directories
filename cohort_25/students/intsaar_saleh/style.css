@@ -1,10 +1,10 @@
-body {background-image: url("https://cdn.glitch.global/fe39e197-6549-496e-8a9b-3d5a64910915/f2f9ec_0b5d94e36d6747ff9fa8de658c2dcfc9~mv2.gif?v=1708754001307");
+body {background-image: url("./images/stars.gif");
  }
 
 
 
 .banner {
-  background-image: url("https://cdn.glitch.global/fe39e197-6549-496e-8a9b-3d5a64910915/d5sj51c-6f8dbd96-7e22-4ae8-ac3d-307112d7756a.gif?v=1708752126647");
+  background-image: url("./images/coffee.gif");
   width: 100%;
   height: 100vh;
   background-size: cover;

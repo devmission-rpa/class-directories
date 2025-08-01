@@ -1,0 +1,685 @@
+img {
+  max-width:100%; 
+  max-height:100%;
+}
+footer {
+  padding: 20px;
+  background: gray;
+  color: white;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: 1fr;
+  background-image: url(https://cdn.glitch.global/c7ac11c1-b04a-41d4-a2b0-fa61510e844e/map?v=1713985479668);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: auto;
+} 
+
+/* MENU */ 
+.grid .img_top {
+  position: absolute;
+  width: 30vw;
+  right: 35vw;
+  top: 490px;
+  animation: swing-top 10s ease-in-out infinite;
+}
+
+@keyframes swing-top {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(10px) rotate(5deg);
+  }
+  75% {
+    transform: translateX(10px) rotate(-5deg); 
+  }
+}
+
+.grid .img_top:hover {
+  filter: brightness(1.2); 
+  filter: grayscale(30%) hue-rotate(280deg);
+}
+/* MENU */ 
+
+/* post its _1 */ 
+/* MENU */ 
+.grid .img_top {
+  position: absolute;
+  width: 20vw;
+  right: 75vw;
+  top: 15px;
+  animation: swing-top 10s ease-in-out infinite;
+}
+
+@keyframes swing-top {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(10px) rotate(5deg);
+  }
+  75% {
+    transform: translateX(10px) rotate(-5deg); 
+  }
+}
+
+.grid .img_top:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg);
+}
+/* MENU */ 
+
+/* YELLLLLLLLLLOOOOOOWWWWWWW*/ 
+.grid .Post_3 {
+  position: absolute;
+  width: 20vw;
+  right: 36vw;
+  top: 230px;
+  animation: swing-Post_3 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_3 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_3:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* post its _2 */ 
+.grid .Post_5 {
+  position: absolute;
+  width: 20vw;
+  right: 36vw;
+  top: 200px;
+  animation: swing-Post_5 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_5 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_5:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* post its _3 */ 
+.grid .Post_6 {
+  position: absolute;
+  width: 20vw;
+  right: 36vw;
+  top: 170px;
+  animation: swing-Post_6 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_6 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_6:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* post its _4 */ 
+.grid .Post_7 {
+  position: absolute;
+  width: 20vw;
+  right: 36vw;
+  top: 260px;
+  animation: swing-Post_7 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_7 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_7:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+
+/* post its _5 */ 
+.grid .Post_8 {
+  position: absolute;
+  width: 20vw;
+  right: 36vw;
+  top: 290px;
+  animation: swing-Post_8 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_8 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_8:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* post its _6 */ 
+.grid .Post_9 {
+  position: absolute;
+  width: 20vw;
+  right: 30vw;
+  top: 220px;
+  animation: swing-Post_9 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_9 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_9:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* post its _6 */ 
+.grid .Post_10 {
+  position: absolute;
+  width: 20vw;
+  right: 40vw;
+  top: 320px;
+  animation: swing-Post_10 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_10 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_10:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* post its _6 */ 
+.grid .Post_11 {
+  position: absolute;
+  width: 20vw;
+  right: 36vw;
+  top: 380px;
+  animation: swing-Post_11 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_11 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_11:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* post its _6 */ 
+.grid .Post_12 {
+  position: absolute;
+  width: 20vw;
+  right: 29vw;
+  top: 410px;
+  animation: swing-Post_12 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_12 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_12:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+
+/* post its _6 */ 
+.grid .Post_13 {
+  position: absolute;
+  width: 20vw;
+  right: 29vw;
+  top: 370px;
+  animation: swing-Post_13 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_13 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_13:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+
+/* GREEEEEEEEEEEEENNNNNN */ 
+
+/* post its _6 */ 
+.grid .Post_14 {
+  position: absolute;
+  width: 20vw;
+  right: 49vw;
+  top: 240px;
+  animation: swing-Post_14 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_14 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_14:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* post its _7 */ 
+.grid .Post_15 {
+  position: absolute;
+  width: 20vw;
+  right: 60vw;
+  top: 240px;
+  animation: swing-Post_15 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_15 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_15:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* post its _7 */ 
+.grid .Post_16 {
+  position: absolute;
+  width: 20vw;
+  right: 50vw;
+  top: 540px;
+  animation: swing-Post_16 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_16 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_16:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* post its _7 */ 
+.grid .Post_17 {
+  position: absolute;
+  width: 20vw;
+  right: 50vw;
+  top: 440px;
+  animation: swing-Post_17 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_17 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_17:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* post its _7 */ 
+.grid .Post_18 {
+  position: absolute;
+  width: 20vw;
+  right: 50vw;
+  top: 559px;
+  animation: swing-Post_18 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_18 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_18:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/** PURPLEEEEEEEEEE */
+
+/* post its _7 */ 
+.grid .Post_19 {
+  position: absolute;
+  width: 20vw;
+  right: 31vw;
+  top: 110px;
+  animation: swing-Post_19 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_19 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_19:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* post its _7 */ 
+.grid .Post_20 {
+  position: absolute;
+  width: 20vw;
+  right: 31vw;
+  top: 110px;
+  animation: swing-Post_20 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_20 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_20:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* post its _7 */ 
+.grid .Post_21 {
+  position: absolute;
+  width: 20vw;
+  right: 38vw;
+  top: 60px;
+  animation: swing-Post_21 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_21 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_21:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* post its _7 */ 
+.grid .Post_22 {
+  position: absolute;
+  width: 20vw;
+  right: 38vw;
+  top: 120px;
+  animation: swing-Post_22 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_22 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_22:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* redddddddddddddd */ 
+
+/* post its _7 */ 
+.grid .Post_23 {
+  position: absolute;
+  width: 20vw;
+  right: 28vw;
+  top: 270px;
+  animation: swing-Post_23 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_23 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_23:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* post its _7 */ 
+.grid .Post_24 {
+  position: absolute;
+  width: 20vw;
+  right: 21vw;
+  top: 370px;
+  animation: swing-Post_24 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_24 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_24:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* post its _7 */ 
+.grid .Post_25 {
+  position: absolute;
+  width: 20vw;
+  right: 21vw;
+  top: 570px;
+  animation: swing-Post_25 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_25 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_25:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+
+/* post its _7 */ 
+.grid .Post_26 {
+  position: absolute;
+  width: 20vw;
+  right: 21vw;
+  top: 500px;
+  animation: swing-Post_26 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_26 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_26:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
+
+/* post its _7 */ 
+.grid .Post_28 {
+  position: absolute;
+  width: 20vw;
+  right: 31vw;
+  top: 490px;
+  animation: swing-Post_28 10s ease-in-out infinite; /* Corrected animation name */
+}
+
+@keyframes swing-Post_28 {
+  0%, 100% {
+    transform: translateX(0px) rotate(0deg); 
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg); 
+  }
+  75% {
+    transform: translateX(-10px) rotate(5deg); 
+  }
+}
+
+.grid .Post_28:hover {
+  filter: brightness(1.2) grayscale(30%) hue-rotate(280deg); /* Corrected filter */
+}
