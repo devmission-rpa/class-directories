@@ -16,13 +16,13 @@ body, p{
   
 }
 
-h1, h2, h3, {
+h1, h2, h3 {
   font-family: "Elsie", serif;
   font-weight: 400;
   font-style: normal;
 }
  
-h4, {
+h4{
   font-family: "Maname", serif;
   font-weight: 400;
   font-style: normal;
@@ -99,13 +99,13 @@ body {
   color:#bb0e00;
 }
 
-.Funny, .Recent, h3, {
+.Funny, .Recent, h3 {
   font-family: "Ultra", serif;
   font-weight: 400;
   font-style: normal;
 }
  
-h4, {
+h4 {
   font-family: "Maname", serif;
   font-weight: 400;
   font-style: normal;

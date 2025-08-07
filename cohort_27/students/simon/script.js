@@ -13,7 +13,6 @@ const maxHeightScrollTo = 100;
 let startY = 0;
 
 
-
 // Set To Top To Prevent Locking user on Page
 window.scrollTo(0,0);
 document.body.style.overflowY = 'hidden';

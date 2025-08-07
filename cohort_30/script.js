@@ -62,7 +62,7 @@ async function loadStudentCards() {
       </a>
 
       <a
-        href="${fields.AboutMe}"
+        href="./students/${fields.First}/index.html"
         target="_blank"
         class="card-buttons btn btn-secondary"
         >About ${fields.First}</a

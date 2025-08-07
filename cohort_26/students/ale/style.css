@@ -1,5 +1,5 @@
 /* a minimalist set of CSS resets */
-
+@import url(css2.css);
 /* default to border-box */
 html {
   box-sizing: border-box;
