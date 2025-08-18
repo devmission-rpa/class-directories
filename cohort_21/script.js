@@ -73,6 +73,8 @@ function menuOnClick() {
 
 
 /*Toggle dark mode */
+
+/*
 const darkModeToggle = document.getElementById("darkModeToggle");
 
 
@@ -80,43 +82,17 @@ const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matche
 
 
 document.body.classList.toggle("dark-mode", prefersDarkMode);
-/*
+
 // Function to toggle dark mode
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
 }
-darkModeToggle.addEventListener("click", toggleDarkMode); */
+darkModeToggle.addEventListener("click", toggleDarkMode); 
 
-
+*/
 
 /*Cards option*/
-$(function () {
-  $(".material-card > .mc-btn-action").click(function () {
-    var card = $(this).parent(".material-card");
-    var icon = $(this).children("i");
-    icon.addClass("fa-spin-fast");
 
-    if (card.hasClass("mc-active")) {
-      card.removeClass("mc-active");
-
-      window.setTimeout(function () {
-        icon
-          .removeClass("fa-arrow-left")
-          .removeClass("fa-spin-fast")
-          .addClass("fa-bars");
-      }, 800);
-    } else {
-      card.addClass("mc-active");
-
-      window.setTimeout(function () {
-        icon
-          .removeClass("fa-bars")
-          .removeClass("fa-spin-fast")
-          .addClass("fa-arrow-left");
-      }, 800);
-    }
-  });
-});
 
 
 

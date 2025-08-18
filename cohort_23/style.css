@@ -48,7 +48,7 @@
 }
 
 .title {
-  font-size: 45px;
+  font-size: 450px;
   font-weight: 400;
 }
 
@@ -363,7 +363,7 @@
 
 
   
-    .left,  {
+    .left  {
         display: grid;
        place-content: center;
     align-content: center;
