@@ -29,8 +29,8 @@ p {
 
 /* Dark mode body */
 .dark-mode {
-    background-color: #122B3F !important;
-    color: #E4E5E7 !important;
+    background-color: #122B3F;
+    color: #E4E5E7;
 }
 
 /* Default light mode navbar */

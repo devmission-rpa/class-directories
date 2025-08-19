@@ -13,7 +13,7 @@ fetch("https://api.airtable.com/v0/appYBYqd9KS9OqEE5/Directory", options)
     console.log(data);
     const cardsContainer = document.getElementById('cards-container');
     data.records.forEach(record => {
-      const picture = record.fields["Picture"];
+      
       const name = record.fields["Name"];
       const linkedin = record.fields["Linkedin"];
       const description = record.fields["Description"];
