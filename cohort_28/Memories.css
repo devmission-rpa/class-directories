@@ -1,0 +1,34 @@
+.box1,.box2{
+  background-repeat: no-repeat;
+}
+
+.signatures{
+    background-size: cover; /* Resize the background image to cover the entire container */
+    max-width: 44vw;
+    max-height: 45vw
+}
+
+.toc {
+  color: black;
+  width: 100%; /* Ensure the list takes the full width */
+  text-align: left; /* Align the list text to the left */
+  list-style: none;
+  padding: 0;
+}
+
+.box1 .toc li {
+  padding: 10px 50px; /* Add balanced padding for a neat look */
+  display: flex; /* Use flexbox for better alignment */
+  align-items: center; /* Vertically center the content */
+  color: #444; /* Neutral text color for readability */
+  font-size: 1rem; /* Keep text legible */
+  margin-bottom: 10px; /* Moderate spacing between items */
+  border-left: 4px solid #5ebab7; /* Add a sleek left border for a TOC-style look */
+  background-color: #fefefe; /* Subtle background for contrast */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth hover effects */
+}
+
+.box1 .toc li:hover {
+  background-color: #f4f4f4; /* Highlight the item on hover */
+  border-color: #e5007e; /* Change border color for a dynamic effect */
+}

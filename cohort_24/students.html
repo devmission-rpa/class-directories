@@ -1,52 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Page Unavailable</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 100px;
-      background-color: #f8f8f8;
-    }
-    .container {
-      background-color: white;
-      display: inline-block;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      color: #cc0000;
-    }
-    p {
-      color: #555;
-    }
-    .home-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    .home-button:hover {
-      background-color: #0056b3;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
 
-  <div class="container">
-    <h1>Page Unavailable</h1>
-    <p>Sorry, this student's page is not available at the moment.</p>
-    <a href="http://127.0.0.1:5500/cohort_24/index.html" class="home-button">Return to Home</a>
-  </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Farsan&display=swap"
+      rel="stylesheet"
+    />
+    
+    <title>DevMission Registered Pre-Apprenticeship Cohort#24</title>
 
-</body>
+    <!-- import the webpage's stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="/student-style-profile.css"> -->
+
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+
+    <!-- START OF NAVIGATION -->
+    <nav class="nav">
+      <div class="logo">
+        <a href="index.html">Cohort #24</a>
+      </div>
+      <ul class="navListItems">
+        <li class="navListItem">
+          <a href="students.html">Students</a>
+        </li>
+        <li class="navListItem">
+          <a href="projects.html">Projects</a>
+        </li>
+        <li class="navListItem">
+          <a href="siteVisits.html">Site Visits</a>
+        </li>
+      </ul>
+    </nav>
+  </head>
+  <body class="stu">
+    <!-- this is the start of content -->
+    <h1 class="white-text text-center ourcohort">Get to know Cohort #24</h1>
+    <p class="white-text text-center ourcohortp">
+      This page is made to get to know a little bit about who we are and what we
+      have done in the program so far.
+    </p>
+    <hr class="cohortline" />
+
+    <div class="frame">
+      
+<iframe class="airtable-embed" src="https://airtable.com/embed/appEw3jsfIpFG9Ulh/shrSXaaXhNhoDCN0F?backgroundColor=blue" frameborder="0" onmousewheel="" width="80%" height="1700" style="background: transparent; border: 1px solid #ccc;"></iframe>    
+    </div>
+      <div id="card-container"></div>
+    
+
+
+    <!--<iframe class="airtable-embed" src="https://airtable.com/embed/appEw3jsfIpFG9Ulh/shraZs4tuzQvEz3Vm?backgroundColor=blue&layout=card&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe> -->
+
+    <!-- 1st card option: Cards for each members in cohort -->
+   
+    <div id="students"></div>
+
+    <!--
+    <div class="row row-cols-1 row-cols-md-3 g-5" id="person-card">
+      <div class="col">
+        <div class="card cardpadding" style="border-radius: 5rem">
+          <img
+            id="images"
+            src="…(airtable)"
+            class="card-img-top"
+            alt="Image of"
+            +sabrina
+            jones
+          />
+          <div class="card-body">
+            <h5 class="card-title">Sabrina Jones</h5>
+            <p class="card-text jobTitle">IT/ Project Managment</p>
+            <div class="overflow-y-scroll">
+              <p id="description" class="card-text">"Stuff about Sabrina"</p>
+            </div>
+            <div class="button-center">
+              <a
+                class="btn btn-secondary"
+                target="_blank"
+                href="…(favorite project)"
+                >Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- 2nd option: Cards for each members in cohort -->
+<!--
+    <section class="apprenticeship">
+      <div class="card">
+        <img src="img.jpg" alt="John" style="width: 100%" />
+        <h1>John Doe</h1>
+        <p class="title">CEO & Founder, Example</p>
+        <p>Harvard University</p>
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <p><button>Contact</button></p>
+      </div>
+    </section>
+    <br />
+-->
+            <!-- START OF FOOTER -->
+      <footer>
+        <p>
+          © 2024 Dev/Mission Registered Pre Apprenticeship, Goodwill Affiliate Cohort#24. All rights
+          reserved.
+        </p>
+      </footer>
+  </body>
 </html>
