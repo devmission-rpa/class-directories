@@ -1,7 +1,7 @@
 // BACKEND FUNCTIONS
 const options = {
       headers: {
-        'Authorization': 'Bearer patZba5jQAk4uVV8K.e73c20c387e599be998955b4d47870645222afa526269503c43e6825c7850843'
+        'Authorization': 'Bearer patZba5jQAk4uVV8K.b1f1194c8a99a5dbb46c9650019dbd3b5e802926efb070296bb1b68f1ce0529b'
       }};
 
 let PicturesDataArray = [];
