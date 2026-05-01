@@ -3,10 +3,12 @@ body {
   padding:0px;
 }
 
-
+header {
+  height: 100vh;
+}
 #title{
   width:100%;
-  height:100%;
+  height:35vh;
   background-color:white;
   text-align:center;
   margin-bottom:-3%;
@@ -17,7 +19,7 @@ body {
   font-size: 3vw;
   margin-left:10%;
   margin-right:10%;
-  text-align:center;
+  text-align: center;
 
   font-family: 'Ubuntu', sans-serif;
   
@@ -35,7 +37,8 @@ body {
 
 #devMissionimg{
   width:50%;
-  margin-top:-3%;
+  margin-top:1%;
+  margin-bottom: 3%;
 }
 
 #cohorts{
@@ -138,7 +141,7 @@ a:link{
 #imageContainer {
       
       width: 100%;
-      height: auto;
+      height: 64vh;
       overflow: hidden;
       
     }
